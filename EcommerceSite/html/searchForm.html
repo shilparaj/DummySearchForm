@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Ekart</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="Ekart online shopping">
+        <meta name="keywords" content="zOnline shopping, kart">
+        <meta name="author" content="John Doe">
+
+        <!-- Apple Specific Meta Tags -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta content="yes" name="apple-touch-fullscreen" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width = 320, initial-scale = 2.3, user-scalable = no">
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+    </head>
+
+    <body>
+        <div class="content-wrapper">
+            <h2>Search Form</h2>
+            <form action="">
+                <div class="inputElement">
+                    <label for="cityName">City</label>
+                    <p class="error hide">Please enter City</p>
+                    <input id="cityName" list="cities" name="cities" max-width="254" value="" placeholder="City Name" tabindex="6">
+                    <datalist id="cities">
+                        <option value="Delhi">
+                        <option value="Gurgaon">
+                        <option value="Bangalore">
+                        <option value="Chandigarh">
+                        <option value="Mumbai">
+                        <option value="Culcutta">
+                        <option value="chennai">
+                    </datalist>
+                </div>
+                <div class="inputElement">
+                        <p class="error hide">No. of rooms Required</p>
+                    <label for="noOfRoom">No. of Rooms</label>
+                    <input  id="noOfRoom" value="" type="number" tabindex="9" placeholder="No. of rooms"/>
+                </div>
+                <div class="inputElement">
+                    <p class="error hide">Check In date is Mandatory</p>
+                    <label for="checkIn">Check In</label>
+                    <input  id="checkIn" value="" type="date" tabindex="7" placeholder="Check In"/>
+                </div>
+                <div class="inputElement">
+                        <p class="error hide">Check Out date is Mandatory</p>
+                    <label for="checkOut">Check Out</label>
+                    <input  id="checkOut" value="" type="date" tabindex="8" placeholder="Checkout"/>
+                </div>
+                <div class="inputElement submitButton">
+                    <button type="submit">Find</button>
+                </div>
+            </form>
+            <section class="searchResult">
+                <aside>
+                    <div class="sort">
+                        <h3>SORT</h3>
+
+                    </div>
+                    <div class="sort">
+                        <h3>Range</h3>
+                        <input type="range" name="points" min="0" max="10000">
+                    </div>
+                </aside>
+                <article>
+                    <div class="propertyItem">
+                        <div class="imageWrapper">
+                            <img alt="image" />
+                        </div>
+                        <div class="description">
+                            <h3>ABC hotel</h3>
+                            <p>Abc hotel in .........</p>
+                        </div>
+                        <div class="price">
+                            <h2>1999 RS</h2>
+                        </div>
+                        <div class="bookNow">
+                            <button>BOOK NOW</button>
+                        </div>
+                    </div>
+                    <div class="propertyItem">
+                        <div class="imageWrapper">
+                            <img  alt="image"/>
+                        </div>
+                        <div class="description">
+                            <h3>MNO hotel</h3>
+                            <p>Abc hotel in .........</p>
+                        </div>
+                        <div class="price">
+                            <h2>2999 RS</h2>
+                        </div>
+                        <div class="bookNow">
+                            <button>BOOK NOW</button>
+                        </div>
+                    </div>
+                    <div class="propertyItem">
+                        <div class="imageWrapper">
+                            <img  alt="image"/>
+                        </div>
+                        <div class="description">
+                            <h3>XYZ hotel</h3>
+                            <p>Abc hotel in .........</p>
+    
+                        </div>
+                        <div class="price">
+                            <h2>3999 RS</h2>
+                        </div>
+                        <div class="bookNow">
+                            <button>BOOK NOW</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </body>
+    <script src="../js/app.js"></script>
+</html>
